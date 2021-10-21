@@ -3,6 +3,7 @@ import SwiftUI
 struct ETUDropdown: View {
     var title: String
     var values: [String]
+    var frameHeightBase: CGFloat?
     @Binding var selectedValue: Int?
     @State private var frameHeight: CGFloat = 30
     @State private var isExpand: Bool = false
@@ -44,6 +45,8 @@ struct ETUDropdown: View {
                                 .font(.custom(isSelected ? FontsManager.OpenSansCondensed.bold : FontsManager.OpenSansCondensed.light, size: 12))
                                 .foregroundColor(isSelected ? Color(.white) : Color.etuColors.lightGray.opacity(0.8))
                                 .padding(.leading, 10)
+                                .padding(.trailing, 40)
+                                .padding(.vertical, 5)
                             Spacer()
                         }
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 30)
@@ -75,9 +78,9 @@ struct ETUDropdown: View {
     
     private func setHeight() {
         if self.isExpand {
-            self.frameHeight = CGFloat(30*(values.count))
+            self.frameHeight = CGFloat((frameHeightBase ?? 30)*CGFloat(values.count))
         } else {
-            self.frameHeight = 30
+            self.frameHeight = frameHeightBase ?? 30
         }
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ETUDocumentOrdering: View {
-    let educationList = ["дд.мм.гггг - дд.мм.гггг | ФКТИ: 10.05.01 - Компьютерная безопасность"]
+    let educationList = ["дд.мм.гггг - дд.мм.гггг | ФКТИ: 10.05.01 - Компьютерная безопасность", "дд.мм.гггг - дд.мм.гггг | ФКТИ: 10.05.01 - Компьютерная безопасность"]
     let typeList = ["Справка об обучении", "Справка о доходах", "Справка 2-НДФЛ"]
     let subTypeList = ["На работу родиелям/на работу себе", "Социальный отдел/собес", "Налоговая инспекция", "Другое/по требованию", "Пенсионный фонд/военкомат для иностранных граждан"]
     @State private var education: Int? = 0
@@ -32,7 +32,6 @@ struct ETUDocumentOrdering: View {
                     .padding(.horizontal, 40)
                     .padding(.top, 20)
                     .padding(.bottom, 30)
-                
                 RoundedRectangle(cornerRadius: 5)
                     .fill(Color.etuColors.blue)
                     .frame(width: 120, height: 25, alignment: .center)
