@@ -22,6 +22,7 @@
 		29A93F1627205B5100517D39 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F1227205B5100517D39 /* Raleway-Regular.ttf */; };
 		29A93F1827205B6000517D39 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F1727205B6000517D39 /* FontsManager.swift */; };
 		29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F19272061DB00517D39 /* ETUNavigationLink.swift */; };
+		29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7199D2721A144002BE492 /* ETUOrderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		29A93F1227205B5100517D39 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Raleway/static/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		29A93F1727205B6000517D39 /* FontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontsManager.swift; path = ../../../ETUDocumentOrder/ETUDocumentOrder/Fonts/FontsManager.swift; sourceTree = "<group>"; };
 		29A93F19272061DB00517D39 /* ETUNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUNavigationLink.swift; sourceTree = "<group>"; };
+		29B7199D2721A144002BE492 /* ETUOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUOrderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				29A93F19272061DB00517D39 /* ETUNavigationLink.swift */,
 				29A878CB2720D78B00357B93 /* ETUMenuButtonStyle.swift */,
 				29A878CF2720E1FF00357B93 /* ETUDropdown.swift */,
+				29B7199D2721A144002BE492 /* ETUOrderButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */,
 				29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */,
 				29A878CC2720D78B00357B93 /* ETUMenuButtonStyle.swift in Sources */,
+				29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */,
 				29A878CE2720DE5700357B93 /* ETUDocumentOrdering.swift in Sources */,
 				29A93EFB27204B0800517D39 /* ETUDocumentOrderingMenu.swift in Sources */,
 				29A93F1827205B6000517D39 /* FontsManager.swift in Sources */,
