@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29A878CC2720D78B00357B93 /* ETUMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A878CB2720D78B00357B93 /* ETUMenuButtonStyle.swift */; };
+		29A878CE2720DE5700357B93 /* ETUDocumentOrdering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */; };
+		29A878D02720E1FF00357B93 /* ETUDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A878CF2720E1FF00357B93 /* ETUDropdown.swift */; };
+		29A93EF927204B0800517D39 /* ETUDocumentOrderingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */; };
+		29A93EFB27204B0800517D39 /* ETUDocumentOrderingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */; };
+		29A93EFD27204B0C00517D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A93EFC27204B0C00517D39 /* Assets.xcassets */; };
+		29A93F0027204B0C00517D39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A93EFF27204B0C00517D39 /* Preview Assets.xcassets */; };
+		29A93F082720542800517D39 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F072720542800517D39 /* Color.swift */; };
+		29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F0A272058CC00517D39 /* ETUNavigationView.swift */; };
+		29A93F1327205B5100517D39 /* OpenSansCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F0F27205B5100517D39 /* OpenSansCondensed-Bold.ttf */; };
+		29A93F1427205B5100517D39 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F1027205B5100517D39 /* Raleway-Medium.ttf */; };
+		29A93F1527205B5100517D39 /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F1127205B5100517D39 /* OpenSansCondensed-Light.ttf */; };
+		29A93F1627205B5100517D39 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F1227205B5100517D39 /* Raleway-Regular.ttf */; };
+		29A93F1827205B6000517D39 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F1727205B6000517D39 /* FontsManager.swift */; };
+		29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F19272061DB00517D39 /* ETUNavigationLink.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29A878CB2720D78B00357B93 /* ETUMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUMenuButtonStyle.swift; sourceTree = "<group>"; };
+		29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrdering.swift; sourceTree = "<group>"; };
+		29A878CF2720E1FF00357B93 /* ETUDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDropdown.swift; sourceTree = "<group>"; };
+		29A878D12720E7C600357B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29A93EF527204B0800517D39 /* ETUDocumentOrdering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETUDocumentOrdering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrderingApp.swift; sourceTree = "<group>"; };
+		29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrderingMenu.swift; sourceTree = "<group>"; };
+		29A93EFC27204B0C00517D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29A93EFF27204B0C00517D39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29A93F072720542800517D39 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		29A93F0A272058CC00517D39 /* ETUNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUNavigationView.swift; sourceTree = "<group>"; };
+		29A93F0F27205B5100517D39 /* OpenSansCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSansCondensed-Bold.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		29A93F1027205B5100517D39 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Raleway/static/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		29A93F1127205B5100517D39 /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSansCondensed-Light.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Open_Sans_Condensed/OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; };
+		29A93F1227205B5100517D39 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Raleway/static/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		29A93F1727205B6000517D39 /* FontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontsManager.swift; path = ../../../ETUDocumentOrder/ETUDocumentOrder/Fonts/FontsManager.swift; sourceTree = "<group>"; };
+		29A93F19272061DB00517D39 /* ETUNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUNavigationLink.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29A93EF227204B0800517D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29A93EEC27204B0800517D39 = {
+			isa = PBXGroup;
+			children = (
+				29A93EF727204B0800517D39 /* ETUDocumentOrdering */,
+				29A93EF627204B0800517D39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29A93EF627204B0800517D39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A93EF527204B0800517D39 /* ETUDocumentOrdering.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29A93EF727204B0800517D39 /* ETUDocumentOrdering */ = {
+			isa = PBXGroup;
+			children = (
+				29A878D12720E7C600357B93 /* Info.plist */,
+				29A93F09272058AF00517D39 /* Components */,
+				29A93F1F2720854C00517D39 /* Extensions */,
+				29A93F0E27205B2F00517D39 /* Fonts */,
+				29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */,
+				29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */,
+				29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */,
+				29A93EFC27204B0C00517D39 /* Assets.xcassets */,
+				29A93EFE27204B0C00517D39 /* Preview Content */,
+			);
+			path = ETUDocumentOrdering;
+			sourceTree = "<group>";
+		};
+		29A93EFE27204B0C00517D39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				29A93EFF27204B0C00517D39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29A93F09272058AF00517D39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				29A93F0A272058CC00517D39 /* ETUNavigationView.swift */,
+				29A93F19272061DB00517D39 /* ETUNavigationLink.swift */,
+				29A878CB2720D78B00357B93 /* ETUMenuButtonStyle.swift */,
+				29A878CF2720E1FF00357B93 /* ETUDropdown.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		29A93F0E27205B2F00517D39 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				29A93F0F27205B5100517D39 /* OpenSansCondensed-Bold.ttf */,
+				29A93F1127205B5100517D39 /* OpenSansCondensed-Light.ttf */,
+				29A93F1027205B5100517D39 /* Raleway-Medium.ttf */,
+				29A93F1227205B5100517D39 /* Raleway-Regular.ttf */,
+				29A93F1727205B6000517D39 /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		29A93F1F2720854C00517D39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29A93F072720542800517D39 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29A93EF427204B0800517D39 /* ETUDocumentOrdering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29A93F0327204B0C00517D39 /* Build configuration list for PBXNativeTarget "ETUDocumentOrdering" */;
+			buildPhases = (
+				29A93EF127204B0800517D39 /* Sources */,
+				29A93EF227204B0800517D39 /* Frameworks */,
+				29A93EF327204B0800517D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ETUDocumentOrdering;
+			productName = ETUDocumentOrdering;
+			productReference = 29A93EF527204B0800517D39 /* ETUDocumentOrdering.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29A93EED27204B0800517D39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					29A93EF427204B0800517D39 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 29A93EF027204B0800517D39 /* Build configuration list for PBXProject "ETUDocumentOrdering" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29A93EEC27204B0800517D39;
+			productRefGroup = 29A93EF627204B0800517D39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29A93EF427204B0800517D39 /* ETUDocumentOrdering */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29A93EF327204B0800517D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A93F0027204B0C00517D39 /* Preview Assets.xcassets in Resources */,
+				29A93F1627205B5100517D39 /* Raleway-Regular.ttf in Resources */,
+				29A93F1427205B5100517D39 /* Raleway-Medium.ttf in Resources */,
+				29A93EFD27204B0C00517D39 /* Assets.xcassets in Resources */,
+				29A93F1327205B5100517D39 /* OpenSansCondensed-Bold.ttf in Resources */,
+				29A93F1527205B5100517D39 /* OpenSansCondensed-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29A93EF127204B0800517D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */,
+				29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */,
+				29A878CC2720D78B00357B93 /* ETUMenuButtonStyle.swift in Sources */,
+				29A878CE2720DE5700357B93 /* ETUDocumentOrdering.swift in Sources */,
+				29A93EFB27204B0800517D39 /* ETUDocumentOrderingMenu.swift in Sources */,
+				29A93F1827205B6000517D39 /* FontsManager.swift in Sources */,
+				29A93F082720542800517D39 /* Color.swift in Sources */,
+				29A878D02720E1FF00357B93 /* ETUDropdown.swift in Sources */,
+				29A93EF927204B0800517D39 /* ETUDocumentOrderingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		29A93F0127204B0C00517D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29A93F0227204B0C00517D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29A93F0427204B0C00517D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ETUDocumentOrdering/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ETUDocumentOrdering/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viwet.ETUDocumentOrdering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29A93F0527204B0C00517D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ETUDocumentOrdering/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ETUDocumentOrdering/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viwet.ETUDocumentOrdering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29A93EF027204B0800517D39 /* Build configuration list for PBXProject "ETUDocumentOrdering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A93F0127204B0C00517D39 /* Debug */,
+				29A93F0227204B0C00517D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A93F0327204B0C00517D39 /* Build configuration list for PBXNativeTarget "ETUDocumentOrdering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A93F0427204B0C00517D39 /* Debug */,
+				29A93F0527204B0C00517D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29A93EED27204B0800517D39 /* Project object */;
+}
