@@ -32,10 +32,10 @@ struct ETUDocumentOrdering: View {
                     .padding(.horizontal, 40)
                     .padding(.top, 20)
                     .padding(.bottom, 30)
-                    
-                ETUNavigationLink(title: "Заказ спраавок", destination: Text("Здесь будет подтверждение зказа")) {Text("Заказать")}
-                .buttonStyle(ETUOrderButton(isDisabled: true))
-                .disabled(true)
+                
+                ETUNavigationLink(title: "Заказ справок", destination: Text("Здесь будет подтверждение заказа...")) {Text("Заказать")}
+                .buttonStyle(ETUOrderButton(isDisabled: false))
+//                .disabled(true)
                 
                 Text("Забрать готовые справки можно только в приемные часы работы (информацию о графике работы уточняйте на сайте).\n\nВопросы по заказу справок о стипендии и иных доходах можно задать Зиминой Анастасии Витальевне по телефону +7 (921) 365-80-25 или по электронной почте avzimina@etu.ru")
                     .font(.custom(FontsManager.OpenSansCondensed.light, size: 14))
