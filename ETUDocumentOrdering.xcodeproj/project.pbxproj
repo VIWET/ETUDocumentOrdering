@@ -57,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2990815A272B944100BE15E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */,
+				29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		29A93EEC27204B0800517D39 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +89,8 @@
 				29A93F09272058AF00517D39 /* Components */,
 				29A93F1F2720854C00517D39 /* Extensions */,
 				29A93F0E27205B2F00517D39 /* Fonts */,
+				2990815A272B944100BE15E2 /* Views */,
 				29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */,
-				29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */,
-				29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */,
 				29A93EFC27204B0C00517D39 /* Assets.xcassets */,
 				29A93EFE27204B0C00517D39 /* Preview Content */,
 			);
