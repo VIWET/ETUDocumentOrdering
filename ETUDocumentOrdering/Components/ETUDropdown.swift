@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct ETUDropdown: View {
-    var title: String
-    var values: [String]
+    let title: String
+    let values: [String]
     var frameHeightBase: CGFloat?
     @Binding var selectedValue: Int?
     @State private var frameHeight: CGFloat = 30
