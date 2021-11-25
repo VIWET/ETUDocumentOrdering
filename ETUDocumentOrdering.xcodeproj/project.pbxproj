@@ -24,6 +24,7 @@
 		29A93F1627205B5100517D39 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29A93F1227205B5100517D39 /* Raleway-Regular.ttf */; };
 		29A93F1827205B6000517D39 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F1727205B6000517D39 /* FontsManager.swift */; };
 		29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F19272061DB00517D39 /* ETUNavigationLink.swift */; };
+		29AEDACF274F4E84004697A1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AEDACE274F4E84004697A1 /* Config.swift */; };
 		29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7199D2721A144002BE492 /* ETUOrderButton.swift */; };
 		29B95523272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95522272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift */; };
 		29B95526272C556200D96B0B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95525272C556200D96B0B /* Student.swift */; };
@@ -51,6 +52,7 @@
 		29A93F1227205B5100517D39 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../../Downloads/Open_Sans_Condensed,Raleway/Raleway/static/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		29A93F1727205B6000517D39 /* FontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontsManager.swift; path = ../../../ETUDocumentOrder/ETUDocumentOrder/Fonts/FontsManager.swift; sourceTree = "<group>"; };
 		29A93F19272061DB00517D39 /* ETUNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUNavigationLink.swift; sourceTree = "<group>"; };
+		29AEDACE274F4E84004697A1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		29B7199D2721A144002BE492 /* ETUOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUOrderButton.swift; sourceTree = "<group>"; };
 		29B95522272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrderingModelView.swift; sourceTree = "<group>"; };
 		29B95525272C556200D96B0B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -100,14 +102,15 @@
 			children = (
 				29B95524272C554700D96B0B /* Models */,
 				29B95521272C548900D96B0B /* ModelView */,
-				29A878D12720E7C600357B93 /* Info.plist */,
 				29A93F09272058AF00517D39 /* Components */,
 				29A93F1F2720854C00517D39 /* Extensions */,
 				29A93F0E27205B2F00517D39 /* Fonts */,
 				2990815A272B944100BE15E2 /* Views */,
 				29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */,
 				29A93EFC27204B0C00517D39 /* Assets.xcassets */,
+				29A878D12720E7C600357B93 /* Info.plist */,
 				29A93EFE27204B0C00517D39 /* Preview Content */,
+				29AEDACE274F4E84004697A1 /* Config.swift */,
 			);
 			path = ETUDocumentOrdering;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */,
 				29A878CC2720D78B00357B93 /* ETUMenuButtonStyle.swift in Sources */,
 				29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */,
+				29AEDACF274F4E84004697A1 /* Config.swift in Sources */,
 				29963C8D273DA2DE00144A5C /* ETUTextField.swift in Sources */,
 				29B95523272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift in Sources */,
 				29963C8B273D9F4600144A5C /* ETUTextFieldStyle.swift in Sources */,

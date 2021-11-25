@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ETUDocumentOrderingConfirm: View {
     @EnvironmentObject var viewModel: ETUDocumentOrderinngViewModel
-    @State var text: String = ""
+    @State var count: String = ""
     
     var body: some View {
 //        VStack {
@@ -14,15 +14,19 @@ struct ETUDocumentOrderingConfirm: View {
         Group {
             VStack(spacing: 15) {
                 VStack(spacing: 10) {
-                    ETUTextField(title: "ФИО", isDisabled: true, text: $text)
+                    ETUTextField(title: "ФИО",
+                                 isDisabled: true,
+                                 text: $viewModel.student.fio)
                     HStack(spacing: 30){
                         VStack(spacing: 10) {
-                            ETUTextField(title: "Номер студ. билета", isDisabled: true, text: $text)
-                            ETUTextField(title: "Тип справки", isDisabled: true, text: $text)
+                            ETUTextField(title: "Номер студ. билета",
+                                         isDisabled: true,
+                                         text: $viewModel.student.educations[(viewModel.document?.selectedEducation)!].studentCardNumber)
+                            ETUTextField(title: "Тип справки", isDisabled: true, text: $count)
                         }
                         VStack(spacing: 10) {
-                            ETUTextField(title: "Количество", isDisabled: false, text: $text)
-                            ETUTextField(title: "Подтип справки", isDisabled: true, text: $text)
+                            ETUTextField(title: "Количество", isDisabled: false, text: $count)
+                            ETUTextField(title: "Подтип справки", isDisabled: true, text: $count)
                         }
                     }
                 }
@@ -35,8 +39,8 @@ struct ETUDocumentOrderingConfirm: View {
                     .font(.custom(FontsManager.OpenSansCondensed.bold, size: 14))
                     .padding(.horizontal, 65)
                 HStack(spacing: 30) {
-                    ETUTextField(title: "Дата начала периода", isDisabled: false, text: $text)
-                    ETUTextField(title: "Дата окончания периода", isDisabled: false, text: $text)
+                    ETUTextField(title: "Дата начала периода", isDisabled: false, text: $count)
+                    ETUTextField(title: "Дата окончания периода", isDisabled: false, text: $count)
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal, 25)

@@ -8,20 +8,29 @@ struct ETUDocumentOrdering: View {
             VStack(spacing: 10) {
                 ETUDropdown(title: "Обучение",
                             values: viewModel.getEducationList(),
-                            selectedValue: $viewModel.selectedEducation)
+                            setValue:  { i in
+                                viewModel.selectedEducation = i
+                            },
+                            selectedValue: viewModel.selectedEducation)
                     .padding(.horizontal, 30)
                     .padding(.top, 10)
                 
                 ETUDropdown(title: "Тип справки",
                             values: viewModel.getDocumentTypes(),
-                            selectedValue: $viewModel.selectedType)
+                            setValue:  { i in
+                                viewModel.setDocumentType(index: i)
+                            },
+                            selectedValue: viewModel.document?.id)
                     .padding(.horizontal, 30)
                 
                 ETUDropdown(title: "Подтип справки",
                             values: viewModel.getDocumentSubtypes(),
-                            selectedValue: $viewModel.selectedSubtype)
+                            setValue:  { i in
+                                viewModel.setDocumentSubtype(index: i)
+                            },
+                            selectedValue: viewModel.document?.selectedSubtype?.id)
                     .padding(.horizontal, 30)
-                    .disabled(!viewModel.hasSubtypes())
+                    .disabled(!(viewModel.document?.hasSubTypes ?? false))
                 
                 Text("Обратите внимание! Если вы хотите заказать\n справку по двум обучениям, вам нужно \n заказать две справки!")
                     .multilineTextAlignment(.center)
@@ -30,7 +39,6 @@ struct ETUDocumentOrdering: View {
                     .padding(.horizontal, 40)
                     .padding(.top, 20)
                     .padding(.bottom, 30)
-                
                 ETUNavigationLink(title: "Заказ справок", destination: ETUDocumentOrderingConfirm()) {Text("Заказать")}
                 .buttonStyle(ETUOrderButton(isDisabled: !viewModel.canBeConfirmed()))
                 .disabled(!viewModel.canBeConfirmed())

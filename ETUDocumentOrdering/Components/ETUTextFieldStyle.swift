@@ -13,7 +13,6 @@ struct ETUTextFieldStyle: TextFieldStyle {
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.etuColors.veryLightGray)
             )
-            
     }
 }
 

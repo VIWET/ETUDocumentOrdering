@@ -15,4 +15,6 @@ struct ETUColor {
     let veryLightGray = Color("ETUVeryLightGray")
     
     let selectedValue = Color("ETUSelectedValue")
+    
+    let textFieldShadow = Color("ETUTextFieldShadow")
 }

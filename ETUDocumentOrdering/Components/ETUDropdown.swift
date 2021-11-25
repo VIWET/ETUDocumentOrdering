@@ -3,9 +3,9 @@ import SwiftUI
 struct ETUDropdown: View {
     let title: String
     let values: [String]
-    var frameHeightBase: CGFloat?
-    @Binding var selectedValue: Int?
-    @State private var frameHeight: CGFloat = 30
+    let setValue: (Int) -> Void
+    
+    var selectedValue: Int?
     @State private var isExpand: Bool = false
     
     var body: some View {
@@ -53,16 +53,15 @@ struct ETUDropdown: View {
                         .background(isSelected ? Color.etuColors.blue : Color.white)
                         .onTapGesture {
                             withAnimation {
-                                self.selectedValue = i
+                                setValue(i)
                                 self.isExpand.toggle()
-                                setHeight()
                             }
                         }
                     }
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 5))
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: frameHeight)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 30)
             .background(RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.etuColors.veryLightGray))
             
@@ -71,16 +70,7 @@ struct ETUDropdown: View {
         .onTapGesture {
             withAnimation(.easeOut) {
                 self.isExpand.toggle()
-                setHeight()
             }
-        }
-    }
-    
-    private func setHeight() {
-        if self.isExpand {
-            self.frameHeight = CGFloat((frameHeightBase ?? 30)*CGFloat(values.count))
-        } else {
-            self.frameHeight = frameHeightBase ?? 30
         }
     }
 }
