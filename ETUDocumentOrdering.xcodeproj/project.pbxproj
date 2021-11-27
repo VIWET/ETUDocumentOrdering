@@ -25,11 +25,14 @@
 		29A93F1827205B6000517D39 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F1727205B6000517D39 /* FontsManager.swift */; };
 		29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A93F19272061DB00517D39 /* ETUNavigationLink.swift */; };
 		29AEDACF274F4E84004697A1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AEDACE274F4E84004697A1 /* Config.swift */; };
+		29AEDAD1274FCDE6004697A1 /* ETUDatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AEDAD0274FCDE6004697A1 /* ETUDatePickerTextField.swift */; };
+		29AEDAD3274FEE75004697A1 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AEDAD2274FEE73004697A1 /* ViewExtensions.swift */; };
 		29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7199D2721A144002BE492 /* ETUOrderButton.swift */; };
 		29B95523272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95522272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift */; };
 		29B95526272C556200D96B0B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95525272C556200D96B0B /* Student.swift */; };
 		29B95528272C572B00D96B0B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95527272C572B00D96B0B /* Document.swift */; };
-		29B9552A272C6C9700D96B0B /* ETUDocumentOrderingConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B95529272C6C9700D96B0B /* ETUDocumentOrderingConfirm.swift */; };
+		29D142B127511434009E270C /* ETUOrderNDFL2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142B027511434009E270C /* ETUOrderNDFL2.swift */; };
+		29D142B3275121F6009E270C /* ETUDocument2NDFLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142B2275121F6009E270C /* ETUDocument2NDFLViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +56,14 @@
 		29A93F1727205B6000517D39 /* FontsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontsManager.swift; path = ../../../ETUDocumentOrder/ETUDocumentOrder/Fonts/FontsManager.swift; sourceTree = "<group>"; };
 		29A93F19272061DB00517D39 /* ETUNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUNavigationLink.swift; sourceTree = "<group>"; };
 		29AEDACE274F4E84004697A1 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		29AEDAD0274FCDE6004697A1 /* ETUDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDatePickerTextField.swift; sourceTree = "<group>"; };
+		29AEDAD2274FEE73004697A1 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		29B7199D2721A144002BE492 /* ETUOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUOrderButton.swift; sourceTree = "<group>"; };
 		29B95522272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrderingModelView.swift; sourceTree = "<group>"; };
 		29B95525272C556200D96B0B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		29B95527272C572B00D96B0B /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		29B95529272C6C9700D96B0B /* ETUDocumentOrderingConfirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOrderingConfirm.swift; sourceTree = "<group>"; };
+		29D142B027511434009E270C /* ETUOrderNDFL2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUOrderNDFL2.swift; sourceTree = "<group>"; };
+		29D142B2275121F6009E270C /* ETUDocument2NDFLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocument2NDFLViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,7 @@
 			children = (
 				29A93EFA27204B0800517D39 /* ETUDocumentOrderingMenu.swift */,
 				29A878CD2720DE5700357B93 /* ETUDocumentOrdering.swift */,
-				29B95529272C6C9700D96B0B /* ETUDocumentOrderingConfirm.swift */,
+				29D142B027511434009E270C /* ETUOrderNDFL2.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,11 +106,11 @@
 		29A93EF727204B0800517D39 /* ETUDocumentOrdering */ = {
 			isa = PBXGroup;
 			children = (
-				29B95524272C554700D96B0B /* Models */,
-				29B95521272C548900D96B0B /* ModelView */,
 				29A93F09272058AF00517D39 /* Components */,
 				29A93F1F2720854C00517D39 /* Extensions */,
 				29A93F0E27205B2F00517D39 /* Fonts */,
+				29B95524272C554700D96B0B /* Models */,
+				29B95521272C548900D96B0B /* ModelView */,
 				2990815A272B944100BE15E2 /* Views */,
 				29A93EF827204B0800517D39 /* ETUDocumentOrderingApp.swift */,
 				29A93EFC27204B0C00517D39 /* Assets.xcassets */,
@@ -133,6 +139,7 @@
 				29B7199D2721A144002BE492 /* ETUOrderButton.swift */,
 				29963C8A273D9F4600144A5C /* ETUTextFieldStyle.swift */,
 				29963C8C273DA2DE00144A5C /* ETUTextField.swift */,
+				29AEDAD0274FCDE6004697A1 /* ETUDatePickerTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				29A93F072720542800517D39 /* Color.swift */,
+				29AEDAD2274FEE73004697A1 /* ViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				29B95522272C54AC00D96B0B /* ETUDocumentOrderingModelView.swift */,
+				29D142B2275121F6009E270C /* ETUDocument2NDFLViewModel.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			files = (
 				29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */,
 				29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */,
+				29D142B127511434009E270C /* ETUOrderNDFL2.swift in Sources */,
 				29A878CC2720D78B00357B93 /* ETUMenuButtonStyle.swift in Sources */,
 				29B7199E2721A144002BE492 /* ETUOrderButton.swift in Sources */,
 				29AEDACF274F4E84004697A1 /* Config.swift in Sources */,
@@ -259,10 +269,12 @@
 				29A878CE2720DE5700357B93 /* ETUDocumentOrdering.swift in Sources */,
 				29A93EFB27204B0800517D39 /* ETUDocumentOrderingMenu.swift in Sources */,
 				29B95526272C556200D96B0B /* Student.swift in Sources */,
+				29AEDAD3274FEE75004697A1 /* ViewExtensions.swift in Sources */,
 				29A93F1827205B6000517D39 /* FontsManager.swift in Sources */,
+				29AEDAD1274FCDE6004697A1 /* ETUDatePickerTextField.swift in Sources */,
 				29B95528272C572B00D96B0B /* Document.swift in Sources */,
-				29B9552A272C6C9700D96B0B /* ETUDocumentOrderingConfirm.swift in Sources */,
 				29A93F082720542800517D39 /* Color.swift in Sources */,
+				29D142B3275121F6009E270C /* ETUDocument2NDFLViewModel.swift in Sources */,
 				29A878D02720E1FF00357B93 /* ETUDropdown.swift in Sources */,
 				29A93EF927204B0800517D39 /* ETUDocumentOrderingApp.swift in Sources */,
 			);
@@ -395,6 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ETUDocumentOrdering/Preview Content\"";
+				DEVELOPMENT_TEAM = KKF9N75Y99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ETUDocumentOrdering/Info.plist;
@@ -426,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ETUDocumentOrdering/Preview Content\"";
+				DEVELOPMENT_TEAM = KKF9N75Y99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ETUDocumentOrdering/Info.plist;

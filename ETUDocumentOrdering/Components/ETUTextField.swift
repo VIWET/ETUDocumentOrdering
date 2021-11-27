@@ -1,17 +1,21 @@
-//
-//  ETUTextField.swift
-//  ETUDocumentOrdering
-//
-//  Created by Ekaterina Krapivina on 11.11.2021.
-//
-
 import SwiftUI
 
 struct ETUTextField: View {
     let title: String
     let isDisabled: Bool
-    @Binding var text: String
+    let validator: ((String) -> Bool)?
+    @Binding var value: String
     @State var isEditing: Bool = false
+    
+    init(title: String,
+         isDisabled: Bool,
+         value: Binding<String>,
+         validator: ((String) -> Bool)? = nil) {
+        self.title = title
+        self.isDisabled = isDisabled
+        self._value = value
+        self.validator = validator
+    }
     
     
     var body: some View {
@@ -24,14 +28,15 @@ struct ETUTextField: View {
                 Spacer()
             }
             .padding(0)
-            TextField("", text: $text, onEditingChanged: { isEditing in
-                self.isEditing = isEditing
+            TextField("", text: $value,
+                      onEditingChanged: { isEditing in
+                            self.isEditing = isEditing
             })
                 .disabled(isDisabled)
                 .textFieldStyle(ETUTextFieldStyle())
                 .background(
                     RoundedRectangle(cornerRadius: 5)
-                        .fill(!text.isEmpty ? Color.etuColors.selectedValue : Color.white)
+                        .fill(!value.isEmpty ? Color.etuColors.selectedValue : Color.white)
                 )
                 .shadow(color: Color.etuColors.textFieldShadow, radius: isEditing ? 10 : 0, x: 0, y: 0)
         }

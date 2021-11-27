@@ -6,7 +6,9 @@ struct ETUDocumentOrderingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ETUDocumentOrderingMenu().environmentObject(viewModel)
+            ETUDocumentOrderingMenu()
+                .preferredColorScheme(.light)
+                .environmentObject(viewModel)
         }
     }
 }

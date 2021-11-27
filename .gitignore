@@ -94,4 +94,4 @@ fastlane/test_output
 iOSInjectionProject/
 .DS_Store
 *.DS_Store
-*.Config.swift
+Config.swift

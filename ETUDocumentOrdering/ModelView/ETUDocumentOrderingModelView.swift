@@ -2,39 +2,13 @@ import Foundation
 
 final class ETUDocumentOrderinngViewModel: ObservableObject {
     @Published var student: Student!
-    @Published var document: AnyDocument?
-//    @Published var selectedSubtype: Int?
+    @Published var document: BaseDocument?
+    @Published var selectedSubtype: Int?
     @Published var selectedEducation: Int! = 0
+    
     
     init() {
         self.fetchStudent()
-    }
-    
-    func getEducationList() -> [String] {
-        var educations: [String] = []
-        for education in self.student.educations {
-            educations.append(education.getFullEducationTitle())
-            educations.append(education.getFullEducationTitle())
-        }
-        return educations
-    }
-    
-    func getDocumentTypes() -> [String] {
-        return ["Справка об обучении", "Справка о доходах", "Справка 2-НДФЛ"]
-    }
-    
-    func getDocumentSubtypes() -> [String] {
-        var subtypes: [String] = []
-        if let document = document {
-            for subtype in document.subtypes {
-                subtypes.append(subtype.title)
-            }
-        }
-        return subtypes
-    }
-
-    func canBeConfirmed() -> Bool {
-        return document != nil
     }
     
     func fetchStudent() {
@@ -58,11 +32,37 @@ final class ETUDocumentOrderinngViewModel: ObservableObject {
         .resume()
     }
     
+    func getEducationList() -> [String] {
+        var educations: [String] = []
+        for education in self.student.educations {
+            educations.append(education.getFullEducationTitle())
+        }
+        return educations
+    }
+    
+    func getDocumentTypes() -> [String] {
+        return ["Справка об обучении", "Справка о доходах", "Справка 2-НДФЛ"]
+    }
+    
+    func getDocumentSubtypes() -> [String] {
+        var subtypes: [String] = []
+        if let document = document {
+            for subtype in document.subtypes {
+                subtypes.append(subtype.title)
+            }
+        }
+        return subtypes
+    }
+
+    func canBeConfirmed() -> Bool {
+        return document != nil && document?.selectedSubtype != nil
+    }
+    
     func setDocumentType(index: Int) {
         switch index {
-            case 0: self.document = DocumentOfStuding()
-            case 1: self.document = DocumentOfIncomes()
-            case 2: self.document = Document2NDFL()
+            case 0: self.document = DocumentOfStuding(selectedEducation: selectedEducation, student: student)
+            case 1: self.document = DocumentOfIncomes(selectedEducation: selectedEducation, student: student)
+            case 2: self.document = Document2NDFL(selectedEducation: selectedEducation, student: student)
             default: self.document = nil
         }
     }
@@ -70,17 +70,14 @@ final class ETUDocumentOrderinngViewModel: ObservableObject {
     func setDocumentSubtype(index: Int) {
         if self.document != nil {
             self.document?.selectSubtype(index: index)
-            print(self.document?.selectedSubtype?.title)
 //            Я НЕ ЗНАЮ ПОЧЕМУ БЕЗ ЭТОЙ СТРОЧКИ НЕ ОТОБРАЖАЕТСЯ ВЫБРАННЫЙ ТИП, ХОТЯ ВНУТРИ МОДЕЛИ ОН УСТАНАВЛИВАЕТСЯ
-//            self.selectedSubtype = self.document?.selectedSubtype?.id
+            self.selectedSubtype = self.document?.selectedSubtype?.id
         }
-
     }
     
-    func confirmDocument() {
-        document?.selectedEducation = selectedEducation
+    func setEducation(index: Int) {
+        document?.selectedEducation = index
+        selectedEducation = index
     }
-
 }
-
 

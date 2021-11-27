@@ -15,9 +15,3 @@ struct ETUTextFieldStyle: TextFieldStyle {
             )
     }
 }
-
-struct ETUTextFieldStyle_Previews: PreviewProvider {
-    static var previews: some View {
-        ETUDocumentOrderingConfirm()
-    }
-}

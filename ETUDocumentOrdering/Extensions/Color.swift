@@ -17,4 +17,6 @@ struct ETUColor {
     let selectedValue = Color("ETUSelectedValue")
     
     let textFieldShadow = Color("ETUTextFieldShadow")
+    
+    let warning = Color("ETUWarning")
 }

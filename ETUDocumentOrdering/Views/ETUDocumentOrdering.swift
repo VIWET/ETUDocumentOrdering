@@ -9,7 +9,7 @@ struct ETUDocumentOrdering: View {
                 ETUDropdown(title: "Обучение",
                             values: viewModel.getEducationList(),
                             setValue:  { i in
-                                viewModel.selectedEducation = i
+                                viewModel.setEducation(index: i)
                             },
                             selectedValue: viewModel.selectedEducation)
                     .padding(.horizontal, 30)
@@ -39,7 +39,7 @@ struct ETUDocumentOrdering: View {
                     .padding(.horizontal, 40)
                     .padding(.top, 20)
                     .padding(.bottom, 30)
-                ETUNavigationLink(title: "Заказ справок", destination: ETUDocumentOrderingConfirm()) {Text("Заказать")}
+                ETUNavigationLink(title: "Заказ справок", destination: Self.destination(document: viewModel.document)) {Text("Заказать")}
                 .buttonStyle(ETUOrderButton(isDisabled: !viewModel.canBeConfirmed()))
                 .disabled(!viewModel.canBeConfirmed())
                 
@@ -51,11 +51,16 @@ struct ETUDocumentOrdering: View {
             }
         }
     }
-}
-
-
-struct ETUDocumentOrdering_Previews: PreviewProvider {
-    static var previews: some View {
-        ETUDocumentOrdering()
+    
+    @ViewBuilder static func destination(document: BaseDocument?) -> some View {
+        if let document = document {
+            if let document = document as? Document2NDFL {
+                ETUOrderNDFL2(document: document)
+            } else {
+                Text("Coming soon")
+            }
+        } else {
+            EmptyView()
+        }
     }
 }
