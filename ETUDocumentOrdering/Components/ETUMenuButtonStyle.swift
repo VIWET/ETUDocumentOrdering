@@ -23,6 +23,7 @@ struct ETUMenuButtonStyle: ButtonStyle {
                     .foregroundColor(configuration.isPressed ? Color.white : Color.etuColors.blue)
                 
                 Text(subTitle)
+                    .padding(.trailing, 30)
                     .multilineTextAlignment(.leading)
                     .font(.custom(FontsManager.Raleway.regular, size: 12))
                     .foregroundColor(configuration.isPressed ? .white : Color.etuColors.lightBlue)

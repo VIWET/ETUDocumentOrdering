@@ -64,22 +64,28 @@ class DocumentOfStuding: BaseDocument {
 //                                       DocumentSubtype(id: 4, title: "Пенсионный фонд/военкомат для иностранных граждан")]
 //    var selectedSubtype: DocumentSubtype?
 //    var selectedEducation: Int?
+    var count: String
+    var comment: String = ""
     
     override func selectSubtype(index: Int) {
         self.selectedSubtype = self.subtypes[index]
     }
     
-    override init(id: Int = 0,
-                  type: String = "Справка об обучении",
-                  hasSubTypes: Bool = true,
-                  subtypes: [DocumentSubtype] = [DocumentSubtype(id: 0, title: "На работу родиелям/на работу себе"),
+    init(id: Int = 0,
+         type: String = "Справка об обучении",
+         hasSubTypes: Bool = true,
+         subtypes: [DocumentSubtype] = [DocumentSubtype(id: 0, title: "На работу родителям/на работу себе"),
                                                  DocumentSubtype(id: 1, title: "Социальный отдел/собес"),
                                                  DocumentSubtype(id: 2, title: "Налоговая инспекция"),
                                                  DocumentSubtype(id: 3, title: "Другое/по требованию"),
                                                  DocumentSubtype(id: 4, title: "Пенсионный фонд/военкомат для иностранных граждан")],
-                  selectedSubtype: DocumentSubtype? = nil,
-                  selectedEducation: Int,
-                  student: Student) {
+         selectedSubtype: DocumentSubtype? = nil,
+         selectedEducation: Int,
+         student: Student,
+         count: String = "",
+         comment: String = "") {
+        self.count = count
+        self.comment = comment
         
         super.init(id: id,
                    type: type,
@@ -98,14 +104,24 @@ class DocumentOfIncomes: BaseDocument {
 //    var subtypes: [DocumentSubtype] = [DocumentSubtype(id: 0, title: "Справка о доходах")]
 //    var selectedSubtype: DocumentSubtype?
 //    var selectedEducation: Int?  = 0
+    var count: String
+    var startDate: Date?
+    var endDate: Date?
 
-    override init(id: Int = 1,
-                  type: String = "Справка о доходах",
-                  hasSubTypes: Bool = false,
-                  subtypes: [DocumentSubtype] = [DocumentSubtype(id: 0, title: "Справка о доходах")],
-                  selectedSubtype: DocumentSubtype? = nil,
-                  selectedEducation: Int? = 0,
-                  student: Student) {
+    init(id: Int = 1,
+         type: String = "Справка о доходах",
+         hasSubTypes: Bool = false,
+         subtypes: [DocumentSubtype] = [DocumentSubtype(id: 0, title: "Справка о доходах")],
+         selectedSubtype: DocumentSubtype? = nil,
+         selectedEducation: Int? = 0,
+         student: Student,
+         count: String = "",
+         startDate: Date? = nil,
+         endDate: Date? = nil) {
+        self.count = count
+        self.startDate = startDate
+        self.endDate = endDate
+        
         super.init(id: id,
                    type: type,
                    hasSubTypes: hasSubTypes,
@@ -113,6 +129,7 @@ class DocumentOfIncomes: BaseDocument {
                    selectedSubtype: selectedSubtype,
                    selectedEducation: 0,
                    student: student)
+        
         self.selectedSubtype = subtypes[0]
     }
     

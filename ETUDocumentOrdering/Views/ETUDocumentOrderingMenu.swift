@@ -1,12 +1,14 @@
 import SwiftUI
 
 struct ETUDocumentOrderingMenu: View {
+    @StateObject var viewModel: ETUDocumentOrderingMenuViewModel = ETUDocumentOrderingMenuViewModel()
+    
     var body: some View {
         ETUNavigationView(title: "Заказ справок") {
             ScrollView {
                 ETUNavigationLink(
                     title: "Заказ справок",
-                    destination: ETUDocumentOrdering()) {}
+                    destination: ETUDocumentOrdering(student: viewModel.student)) {}
                 .buttonStyle(ETUMenuButtonStyle(
                     iconName: "orderButton",
                     iconOnTapName: "orderButtonOnTap",
@@ -25,11 +27,5 @@ struct ETUDocumentOrderingMenu: View {
                 )
             }
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ETUDocumentOrderingMenu()
     }
 }

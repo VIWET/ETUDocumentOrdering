@@ -1,35 +1,14 @@
 import Foundation
 
 final class ETUDocumentOrderinngViewModel: ObservableObject {
-    @Published var student: Student!
-    @Published var document: BaseDocument?
+    @Published var student: Student
+    @Published var document: BaseDocument!
     @Published var selectedSubtype: Int?
     @Published var selectedEducation: Int! = 0
     
     
-    init() {
-        self.fetchStudent()
-    }
-    
-    func fetchStudent() {
-        var request = URLRequest(url: URL(string: "https://lk.etu.ru/api/profile/0")!)
-        
-        request.setValue(PSEUDO_API, forHTTPHeaderField: "Cookie")
-
-        
-        URLSession.shared.dataTask(with: request) { (data, _, e) in
-            if let data = data {
-                 let student = try! JSONDecoder().decode(Student.self, from: data)
-                
-                DispatchQueue.main.async {
-                    self.student = student
-                }
-                
-            } else {
-                print(e!)
-            }
-        }
-        .resume()
+    init(student: Student) {
+        self.student = student
     }
     
     func getEducationList() -> [String] {

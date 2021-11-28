@@ -75,6 +75,7 @@ struct ETUDatePicker: View {
     var validationDate: Date?
     @Binding var isEditing: Bool
     @Binding var dateSelector: Date?
+    @State var temp: Date?
     let warning: String
     let range: (Date?) -> ClosedRange<Date>
     let validator: (Date?, Date?) -> Bool
@@ -82,6 +83,10 @@ struct ETUDatePicker: View {
     var body: some View {
         ZStack {
             Color.black.opacity(0.4).ignoresSafeArea()
+                .onTapGesture {
+                    dateSelector = temp
+                    isEditing = false
+                }
             VStack {
                 Text(title)
                     .padding(.top)
@@ -107,6 +112,7 @@ struct ETUDatePicker: View {
                 Button {
                     if validator(dateSelector, validationDate) {
                         isEditing = false
+                        temp = dateSelector
                     }
                 } label: {
                     Text("Подтвердить")

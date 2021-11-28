@@ -1,14 +1,14 @@
 import SwiftUI
 
-struct ETUOrderNDFL2: View {
-    @StateObject var viewModel: ETUDocument2NDFLViewModel
+struct ETUOrderDocumentOfIncomes: View {
+    @StateObject var viewModel: ETUDocumentOfIncomesViewModel
     
     @State var startDateEdit: Bool = false
     @State var endDateEdit: Bool = false
     @State var bining: String = ""
     
-    init(document: Document2NDFL) {
-        _viewModel = StateObject(wrappedValue: ETUDocument2NDFLViewModel(document: document))
+    init(document: DocumentOfIncomes) {
+        _viewModel = StateObject(wrappedValue:  ETUDocumentOfIncomesViewModel(document: document))
     }
     
     var body: some View {
@@ -115,7 +115,7 @@ struct ETUOrderNDFL2: View {
                         .foregroundColor(Color.etuColors.warning)
                 }
                 Spacer()
-                Text("Справка заказывается в пределах одного календарного года. Если нужен период больше, нужно заказать несколько справок (отдельно за каждый календарный год). Справка будет сформирована и выдана при условии, если в периоде был доход, который подлежит налогообложению. При отсутствии налогооблагаемого дохода  справка не формируется и не выдается, даже если была заказана.\n\nВ случае возникновения вопросов по справкам просьба писать личное сообщение в Личном Кабинете ответственному лицу: Зимина А. В.")
+                Text("В случае возникновения вопросов по справкам просьба писать личное сообщение в Личном Кабинете ответственному лицу: Зимина А. В.")
                     .foregroundColor(Color.etuColors.lightBlue)
                     .font(.custom(FontsManager.OpenSansCondensed.light, size: 14))
                     .padding(.leading, 25)

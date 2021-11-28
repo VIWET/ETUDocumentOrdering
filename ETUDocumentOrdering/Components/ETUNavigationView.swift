@@ -38,7 +38,9 @@ struct ETUNavigationViewContainer<Content: View> : View {
             ETUNavigationBarView(title: title)
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-        } 
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        .ignoresSafeArea(.keyboard)
     }
 }
 
@@ -67,7 +69,6 @@ struct ETUNavigationBarView: View {
                         .font(.custom(FontsManager.Raleway.medium, size: 18))
                         .foregroundColor(Color.etuColors.lightGray))
             .background(Color.white.shadow(color: Color.etuColors.lightGray.opacity(0.5), radius: 0, x: 0, y: 1))
-            
         }
         .zIndex(1.0)
     }

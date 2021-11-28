@@ -1,9 +1,9 @@
 import Foundation
 
-final class ETUDocument2NDFLViewModel: ObservableObject {
-    @Published var document: Document2NDFL
+final class ETUDocumentOfIncomesViewModel: ObservableObject {
+    @Published var document: DocumentOfIncomes
     
-    init(document: Document2NDFL) {
+    init(document: DocumentOfIncomes) {
         self.document = document
     }
     
@@ -15,3 +15,4 @@ final class ETUDocument2NDFLViewModel: ObservableObject {
         return Int(document.count) != nil && document.startDate != nil && document.endDate != nil
     }
 }
+
