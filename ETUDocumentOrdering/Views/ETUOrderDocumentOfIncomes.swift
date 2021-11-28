@@ -75,6 +75,7 @@ struct ETUOrderDocumentOfIncomes: View {
                                          value: $viewModel.document.count) { text in
                                                             return !text.isEmpty && Int(text) != nil
                                                         }
+                                         .keyboardType(.numberPad)
                             ETUTextField(title: "Подтип справки",
                                          isDisabled: true,
                                          value: Binding(get: { viewModel.document.selectedSubtype!.title },

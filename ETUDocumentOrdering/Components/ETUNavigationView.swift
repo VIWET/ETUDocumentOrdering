@@ -34,13 +34,20 @@ struct ETUNavigationViewContainer<Content: View> : View {
     }
     
     var body: some View {
-        VStack(spacing: 0) {
-            ETUNavigationBarView(title: title)
-            content
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        ZStack {
+            Color.white
+                .ignoresSafeArea()
+            VStack(spacing: 0) {
+                ETUNavigationBarView(title: title)
+                content
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+            .ignoresSafeArea(.keyboard)
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        .ignoresSafeArea(.keyboard)
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
     }
 }
 

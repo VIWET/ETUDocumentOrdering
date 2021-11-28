@@ -39,6 +39,9 @@
 		29D142BE2753BBD6009E270C /* ETUDocumentOfStudingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142BD2753BBD6009E270C /* ETUDocumentOfStudingViewModel.swift */; };
 		29D142C02753C05D009E270C /* ETUDocumentOfIncomesModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142BF2753C05D009E270C /* ETUDocumentOfIncomesModelView.swift */; };
 		29D142C22753C0C4009E270C /* ETUOrderDocumentOfIncomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142C12753C0C4009E270C /* ETUOrderDocumentOfIncomes.swift */; };
+		29D142C42753E0EC009E270C /* ETUTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142C32753E0EC009E270C /* ETUTextEditor.swift */; };
+		29D142C62753F914009E270C /* UIAplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142C52753F914009E270C /* UIAplicationExtension.swift */; };
+		29D142C82753FAF4009E270C /* ETUCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D142C72753FAF3009E270C /* ETUCheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		29D142BD2753BBD6009E270C /* ETUDocumentOfStudingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOfStudingViewModel.swift; sourceTree = "<group>"; };
 		29D142BF2753C05D009E270C /* ETUDocumentOfIncomesModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUDocumentOfIncomesModelView.swift; sourceTree = "<group>"; };
 		29D142C12753C0C4009E270C /* ETUOrderDocumentOfIncomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUOrderDocumentOfIncomes.swift; sourceTree = "<group>"; };
+		29D142C32753E0EC009E270C /* ETUTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUTextEditor.swift; sourceTree = "<group>"; };
+		29D142C52753F914009E270C /* UIAplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAplicationExtension.swift; sourceTree = "<group>"; };
+		29D142C72753FAF3009E270C /* ETUCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETUCheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 				29963C8A273D9F4600144A5C /* ETUTextFieldStyle.swift */,
 				29963C8C273DA2DE00144A5C /* ETUTextField.swift */,
 				29AEDAD0274FCDE6004697A1 /* ETUDatePickerTextField.swift */,
+				29D142C32753E0EC009E270C /* ETUTextEditor.swift */,
+				29D142C72753FAF3009E270C /* ETUCheckBox.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			children = (
 				29A93F072720542800517D39 /* Color.swift */,
 				29AEDAD2274FEE73004697A1 /* ViewExtensions.swift */,
+				29D142C52753F914009E270C /* UIAplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -284,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A93F1A272061DB00517D39 /* ETUNavigationLink.swift in Sources */,
+				29D142C42753E0EC009E270C /* ETUTextEditor.swift in Sources */,
 				29D142BA27527032009E270C /* StudentService.swift in Sources */,
 				29A93F0B272058CC00517D39 /* ETUNavigationView.swift in Sources */,
 				29D142B127511434009E270C /* ETUOrderNDFL2.swift in Sources */,
@@ -302,7 +312,9 @@
 				29AEDAD1274FCDE6004697A1 /* ETUDatePickerTextField.swift in Sources */,
 				29B95528272C572B00D96B0B /* Document.swift in Sources */,
 				29D142B727526D01009E270C /* ETUDocumentOrderingMenuViewModel.swift in Sources */,
+				29D142C82753FAF4009E270C /* ETUCheckBox.swift in Sources */,
 				29A93F082720542800517D39 /* Color.swift in Sources */,
+				29D142C62753F914009E270C /* UIAplicationExtension.swift in Sources */,
 				29D142B3275121F6009E270C /* ETUDocument2NDFLViewModel.swift in Sources */,
 				29D142B52752647F009E270C /* Config.swift in Sources */,
 				29A878D02720E1FF00357B93 /* ETUDropdown.swift in Sources */,

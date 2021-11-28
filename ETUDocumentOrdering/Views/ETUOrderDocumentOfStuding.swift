@@ -26,23 +26,30 @@ struct ETUOrderDocumentOfStuding: View {
                                  value: $viewModel.document.count) { text in
                                                     return !text.isEmpty && Int(text) != nil
                                                 }
+                                 .keyboardType(.numberPad)
                 }
                 ETUTextField(title: "Подтип справки",
                              isDisabled: true,
                              value: Binding(get: { viewModel.document.selectedSubtype!.title },
                                             set: { viewModel.document.selectedSubtype!.title = $0 }))
-                ///
-                /// Text edit forrm
-                ///
-                ///
+                ETUTextEditor(title: "Комментарий", value: $viewModel.document.comment)
             }
             .padding(.horizontal, 25)
             Divider()
                 .padding(.horizontal, 10)
-            ///
-            /// CheckBox
-            ///
-            ///
+            HStack(spacing: 15) {
+                Button {
+                    viewModel.document.heraldicStamp.toggle()
+                } label: {}
+                .buttonStyle(ETUCheckBox(isChecked: $viewModel.document.heraldicStamp))
+                Text("Нужна гербовая печать (справка делается дольше)")
+                    .foregroundColor(Color.etuColors.lightBlue)
+                    .font(.custom(FontsManager.OpenSansCondensed.light, size: 14))
+                Spacer()
+
+            }
+            .padding(.horizontal, 25)
+            .padding(.bottom, 25)
             Button {
 //                    Сделать!!! POST DATA
             } label: {
