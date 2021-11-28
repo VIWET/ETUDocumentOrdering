@@ -37,6 +37,9 @@ struct ETUNavigationViewContainer<Content: View> : View {
         ZStack {
             Color.white
                 .ignoresSafeArea()
+                .onTapGesture {
+                    UIApplication.shared.endEditing()
+                }
             VStack(spacing: 0) {
                 ETUNavigationBarView(title: title)
                 content
@@ -44,9 +47,6 @@ struct ETUNavigationViewContainer<Content: View> : View {
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .ignoresSafeArea(.keyboard)
-        }
-        .onTapGesture {
-            UIApplication.shared.endEditing()
         }
     }
 }
